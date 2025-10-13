@@ -34,9 +34,18 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <Link href="/" className="text-white font-bold text-xl tracking-wide">
-          Aisha.dev
-        </Link>
+       <motion.div
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+>
+  <Link
+    href="/"
+    className="text-2xl font-extrabold tracking-tight text-white hover:text-yellow-400 transition-colors logo-glow"
+  >
+    <span className="text-yellow-400">A</span>isha.dev
+  </Link>
+</motion.div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-white font-medium">
