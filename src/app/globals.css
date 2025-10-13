@@ -11,3 +11,76 @@ html, body {
 section#skills {
   background: linear-gradient(180deg, #0f0f0f, #000000);
 }
+
+/* 🔥 Glowing Border Effect */
+.glow-border {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.glow-border::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #8b5cf6,
+    #ec4899,
+    #3b82f6
+  );
+  background-size: 300% 300%;
+  animation: border-slide 4s linear infinite;
+  z-index: 0;
+}
+
+.glow-border::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: rgba(17, 17, 17, 0.95);
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+@keyframes border-slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 🌈 Subtle grid background for sections */
+.section-bg {
+  background: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+/* 🔥 Vertical timeline line */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, #3b82f6, #8b5cf6, #ec4899);
+  background-size: 200% 200%;
+  animation: gradient-flow 5s ease infinite;
+  border-radius: 9999px;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
