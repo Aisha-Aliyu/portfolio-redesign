@@ -7,3 +7,7 @@ html, body {
 .logo-glow:hover {
   filter: drop-shadow(0 0 8px #facc15);
 }
+
+section#skills {
+  background: linear-gradient(180deg, #0f0f0f, #000000);
+}
