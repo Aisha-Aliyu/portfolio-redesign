@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Portfolio Redesign — Aisha Aliyu
 
-## Getting Started
+> A modern, fully responsive personal portfolio built with Next.js 14, TypeScript, Tailwind CSS, Material UI, and Styled Components. Optimised for performance, Core Web Vitals, and SSR/SSG.
 
-First, run the development server:
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge)](https://portfolio-redesign-eta.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![MUI](https://img.shields.io/badge/Material%20UI-5.x-007FFF?style=for-the-badge&logo=mui)](https://mui.com/)
+[![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=for-the-badge&logo=vercel)](https://portfolio-redesign-eta.vercel.app/)
+
+-----
+
+## 🌐 Live Demo
+
+👉 **[portfolio-redesign-eta.vercel.app](https://portfolio-redesign-eta.vercel.app/)**
+
+-----
+
+## 📖 About
+
+A clean, production-grade personal portfolio that demonstrates advanced frontend engineering — combining multiple styling systems (Tailwind CSS, Material UI, and Styled Components) in a single cohesive Next.js 14 App Router project.
+
+Built with full TypeScript type safety, SSR/SSG rendering strategies, and a strong focus on performance, smooth animations, and developer experience.
+
+-----
+
+## ✨ Features
+
+- 🎨 **Multi-library Styling** — Tailwind CSS for utility-first layouts, MUI for component system, Styled Components for dynamic theming — all integrated seamlessly
+- ⚡ **Performance Optimised** — SSR/SSG via Next.js App Router, image optimisation, code splitting, and lazy loading for strong Core Web Vitals scores
+- 📱 **Fully Responsive** — Fluid layouts across mobile, tablet, and desktop breakpoints
+- 🔤 **Custom Typography** — Carefully chosen font pairing with `next/font` for zero layout shift
+- 🎞️ **Smooth Animations** — Subtle entrance and scroll animations for a polished feel
+- 🔒 **Type-Safe** — 100% TypeScript with strict mode enabled
+- 🗂️ **Sections** — Hero, Projects, Skills, About, Contact
+- 🚀 **Fast Deployment** — Auto-deployed on Vercel from GitHub
+
+-----
+
+## 🛠️ Tech Stack
+
+|Layer     |Technology                                    |
+|----------|----------------------------------------------|
+|Framework |Next.js 14 (App Router)                       |
+|Language  |TypeScript                                    |
+|Styling   |Tailwind CSS + Material UI + Styled Components|
+|Fonts     |next/font (Google Fonts)                      |
+|Deployment|Vercel                                        |
+
+-----
+
+## 📂 Project Structure
+
+```
+src/
+├─ app/
+│  ├─ layout.tsx        # Root layout, fonts, metadata
+│  ├─ page.tsx          # Home page (all sections)
+│  └─ globals.css       # Global styles & CSS variables
+├─ components/
+│  ├─ Hero/             # Hero section
+│  ├─ Projects/         # Projects grid
+│  ├─ Skills/           # Skills section
+│  ├─ About/            # About section
+│  ├─ Contact/          # Contact form
+│  └─ shared/           # Navbar, Footer, common components
+public/                 # Static assets & images
+```
+
+-----
+
+## ⚙️ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Aisha-Aliyu/portfolio-redesign.git
+cd portfolio-redesign
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open <http://localhost:3000> in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+-----
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deployed on **Vercel** with automatic deployments from the `main` branch:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your code to GitHub
+1. Import the repo at [vercel.com/new](https://vercel.com/new)
+1. Deploy ✅ — zero configuration needed for Next.js
 
-## Deploy on Vercel
+-----
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🗺️ Roadmap
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] Dark mode toggle
+- [ ] Blog section with MDX posts
+- [ ] Framer Motion page transitions
+- [ ] Contact form with email sending (Resend / EmailJS)
+- [ ] i18n support (English / French)
+
+-----
+
+## 👩‍💻 Author
+
+**Aisha Aliyu** — Full-Stack & Frontend Engineer
+
+- 🌐 Portfolio: [humairah.netlify.app](https://humairah.netlify.app)
+- 💼 LinkedIn: [linkedin.com/in/aisha-aliyu-628b41376](https://www.linkedin.com/in/aisha-aliyu-628b41376)
+- 🐙 GitHub: [@Aisha-Aliyu](https://github.com/Aisha-Aliyu)
+
+-----
+
+## 📜 License
+
+This project is open source and available under the [MIT License](./LICENSE).
